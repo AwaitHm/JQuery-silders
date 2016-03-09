@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<title></title>
+	</head>
+	<style type="text/css">
+	   	html,body{
+		   	padding: 0;
+		   	margin: 0;
+	    }
+	    .num, h2{
+	    	display: inline-block;
+	    	color: red;
+	    }
+	    .slider {
+		    width: 400px;
+		    height: 10px;
+		    background-color: #A9A8A8;
+		    position: relative;
+		    display: inline-block;
+		    margin: 20px;
+		}
+		.sliderbutton {
+		    position: absolute;
+		    top: -5px;
+		    left: 0px;
+		    width: 10px;
+		    height: 20px;
+		    background-color: #000;
+		    cursor: pointer;
+		}
+	</style>
+	<body>
+		<div class="slider">
+			<div id="sliderbutton1" class="sliderbutton"></div>
+		</div>
+		<h2><div class="num"></div></h2>
+		<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/JQuery-silders.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".slider").silder();
+		</script>
+	</body>
+</html>
